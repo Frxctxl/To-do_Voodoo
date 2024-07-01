@@ -79,9 +79,7 @@ function handleAddTask() {
 // Todo: create a function to handle deleting a task
 function handleDeleteTask(eventObj) {
   taskList.splice(taskList.indexOf(eventObj.target), 1);
-  console.log('o');
   localStorage.setItem('tasks', JSON.stringify(taskList));
-  console.log(taskList)
   renderTaskList();
 }
 
